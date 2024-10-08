@@ -1,0 +1,22 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+<div class="contact-container">
+    <h2 id="RBG">Contact Us</h2>
+    <form class="form">
+        <label for="name" id="RBG">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name.." required >
+
+        <br><br>
+        <label for="email" id="RBG">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email.." required >
+
+        <br><br>
+        <label for="message" id="RBG">Message</label>
+        <textarea id="message" name="message" placeholder="Your message.." required ></textarea>
+
+        <br><br>
+        <input type="submit" value="Send Message">
+    </form>
+</div>
+{% endblock content %}
