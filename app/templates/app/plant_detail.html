@@ -1,0 +1,8 @@
+<h1>{{ plant.Name }}</h1>
+<p>{{ plant.Description }}</p>
+<p>Sunlight: {{ plant.Sunlight }}</p>
+<p>Soil Type: {{ plant.Soil_type }}</p>
+<p>Water Requirements: {{ plant.Water_requirements }}</p>
+<a href="{% url 'plant-update' plant.id %}">Edit</a> |
+<a href="{% url 'plant-delete' plant.id %}">Delete</a> |
+<a href="{% url 'plant-list' %}">Back to list</a>

@@ -1,0 +1,7 @@
+<h1>Delete Plant</h1>
+<p>Are you sure you want to delete "{{ plant.Name }}"?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Yes, delete</button>
+</form>
+<a href="{% url 'plant-list' %}">Cancel</a>
